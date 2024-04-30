@@ -1,0 +1,192 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(12, 12, 12);
+}
+
+.drinkles {
+    height: auto !important;
+    width: 5rem !important;
+}
+
+/* NAVBAR */
+.nav-link {
+    color: #FFD15C;
+}
+
+.dropdown-item {
+    color: #FFD15C;
+}
+
+.dropdown-item:hover {
+    color: #FFD15C;
+    background-color: black;
+} 
+/* NAVBAR */
+
+img,iframe {
+    float: inline-start;
+    margin-right: 2rem;
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.text-box {
+    color: white;
+    padding: 25px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.contacto {
+    background-image: url(./Assets/coctel\ background.jpg);
+    background-size: cover;
+}
+
+.contactoFooter {
+    text-decoration: none;
+    color: #FFD15C;
+    font-size: 25px;
+}
+
+.img {
+    height: auto;
+    width: 100%;
+}
+
+.text {
+    text-align: center;
+}
+
+p,
+ul {
+    font-size: 20px;
+}
+
+/* GRILLA */
+#grilla {
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 50% 50% ;
+    grid-template-areas:
+        "clas clas_list"
+        "clas_img clas_list";
+    grid-gap: 50px 10px;
+}
+
+#clas_coctel {
+    margin: 0 !important;
+    grid-area: clas;
+}
+
+#clas_coctel_img {
+    grid-area: clas_img;
+}
+
+#clas_coctel_list {
+    grid-area: clas_list;
+}
+
+@media only screen and (max-width: 994px) {
+    #clas_coctel {
+        overflow: auto;
+    }
+}
+
+
+/* GRILLA */
+
+/* GRILLA 2 */
+.grilla2 {
+    display: grid;
+    grid-template-rows: 200px 200px 150px 150px;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-areas:
+        "img1 img2 img5 img4"
+        "img1 img2 img5 img4"
+        "img1 img3 img7 img6"
+        "img1 img3 img7 img6";
+    grid-gap: 10px;
+    padding: 20px;
+    /* background-color: #d15cff; */
+}
+
+#img1 {
+    grid-area: img1;
+    background-image: url(./Assets/shirley\ temple.jpg);
+}
+
+#img2 {
+    grid-area: img2;
+    background-image: url(./Assets/Michelada\ sin\ alcohol.jpg);
+}
+
+#img3 {
+    grid-area: img3;
+    background-image: url(./Assets/Limonada\ de\ piña.jpg);
+}
+
+#img4 {
+    grid-area: img4;
+    background-image: url(./Assets/Limonada\ a\ la\ americana.jpg);
+}
+
+#img5 {
+    grid-area: img5;
+    background-image: url(./Assets/Limonada\ de\ frambuesa.jpg);
+}
+
+#img6 {
+    grid-area: img6;
+    background-image: url(./Assets/Smoothie\ de\ mango.jpg);
+}
+
+#img7 {
+    grid-area: img7;
+    background-image: url(./Assets/Té\ verde.jpg);
+    background-position: bottom;
+}
+
+.imgGrilla {
+    border: 5px solid white;
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px;
+    transition: all 0.4s;
+}
+
+.imgGrilla:hover {
+    transform: scale(1.05);
+    filter: contrast(105%);
+}
+
+/* @media only screen and (max-width: 900px) {
+    .grilla2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 200px);
+        grid-template-areas: none;
+    }
+    
+} */
+
+/* GRILLA 2*/
+
+.formulario {
+    padding-left: 500px;
+    padding-right: 500px;
+    padding-top: 70px;
+}
