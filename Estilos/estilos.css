@@ -382,7 +382,7 @@
   background-image: url(../Assets/coctelBackground.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-position: right;
+  background-position: center;
 }
 
 .contactoFooter {
@@ -623,6 +623,4 @@ ul {
   height: 700px;
 }
 
-/* COCTELES SIN ALCOHOL */
-
-/*# sourceMappingURL=estilos.css.map */
+/* COCTELES SIN ALCOHOL *//*# sourceMappingURL=estilos.css.map */
