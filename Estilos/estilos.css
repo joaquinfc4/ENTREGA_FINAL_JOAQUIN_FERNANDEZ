@@ -36,6 +36,11 @@
   transition: all 0.9s;
 }
 
+@media only screen and (max-width: 900px) {
+  .imgGrilla3 {
+    background-size: cover;
+  }
+}
 .imgGrilla3:hover {
   /* transition: all 0.9s; */
   background-size: 115%;
@@ -235,6 +240,11 @@
   transition: all 0.9s;
 }
 
+@media only screen and (max-width: 900px) {
+  .imgGrilla4 {
+    background-size: cover;
+  }
+}
 .imgGrilla4:hover {
   background-size: 115%;
   filter: saturate(150%);
@@ -277,7 +287,6 @@
 .backgroundColor2 {
   background-color: rgba(255, 209, 92, 0.8274509804);
   color: #000;
-  margin: 10px;
   border-radius: 10px;
 }
 
@@ -369,6 +378,19 @@
   background-color: #000;
 }
 
+.contacto {
+  background-image: url(../Assets/coctelBackground.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right;
+}
+
+.contactoFooter {
+  text-decoration: none;
+  color: #FFD15C;
+  font-size: 25px;
+}
+
 body {
   background-color: rgb(12, 12, 12);
   font-family: "Poppins", sans-serif;
@@ -425,17 +447,6 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-}
-
-.contacto {
-  background-image: url(../Assets/coctelBackground.jpg);
-  background-size: cover;
-}
-
-.contactoFooter {
-  text-decoration: none;
-  color: #FFD15C;
-  font-size: 25px;
 }
 
 .img {

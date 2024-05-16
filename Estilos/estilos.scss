@@ -22,6 +22,8 @@ $animal: perro;
 @import 'whiskey';
 @import 'home';
 @import 'vodka';
+@import 'contacto';
+
 
 
 body {
@@ -81,17 +83,6 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-}
-
-.contacto {
-    background-image: url(../Assets/coctelBackground.jpg);
-    background-size: cover;
-}
-
-.contactoFooter {
-    text-decoration: none;
-    color: $amarillo;
-    font-size: 25px;
 }
 
 .img {

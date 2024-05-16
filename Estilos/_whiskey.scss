@@ -29,6 +29,12 @@
     transition: all 0.9s;
 }
 
+@media only screen and (max-width: 900px) {
+  .imgGrilla3 {
+      background-size: cover;
+  }
+}
+
 .imgGrilla3:hover {
     /* transition: all 0.9s; */
     background-size: 115%;

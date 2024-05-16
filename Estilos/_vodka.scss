@@ -31,6 +31,12 @@
     transition: all 0.9s;
 }
 
+@media only screen and (max-width: 900px) {
+  .imgGrilla4 {
+      background-size: cover;
+  }
+}
+
 .imgGrilla4:hover {
     background-size: 115%;
     @include saturate;
@@ -50,7 +56,6 @@
 .backgroundColor2 {
     background-color: #ffd15cd3;
     color: $negro;
-    margin: 10px;
     border-radius: 10px;
 }
 
