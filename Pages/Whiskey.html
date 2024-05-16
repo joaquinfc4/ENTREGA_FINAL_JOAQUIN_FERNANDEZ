@@ -8,42 +8,384 @@
     <title>Drinkles</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../Estilos/estilos.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand ms-4" href="../index.html">
-            <img class="logo rounded drinkles" src="../Assets/drinkles.png" alt="drinkels_logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav  ms-auto">
-                <li class="nav-item active">
-                    <a class="btn btn-dark nav-link" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-dark nav-link" href="./Aprender.html">Aprender</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-dark nav-link" href="../Pages/CoctelesSinAlcohol.html">Cocteles sin alcohol</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <button class="btn btn-dark dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">
-                      Cocteles con alcohol
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="#">Whiskey</a></li>
-                      <li><a class="dropdown-item" href="#">Vodka</a></li>
-                      <li><a class="dropdown-item" href="#">Gin</a></li>
-                    </ul>
-                  </li>
-            </ul>
+        <div class="container-fluid">
+            <a class="navbar-brand ms-4" href="../index.html">
+                <img class="logo rounded drinkles" src="../Assets/drinkles.png" alt="drinkels_logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Pages/Aprender.html">Aprender</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Pages/CoctelesSinAlcohol.html">Cocteles sin alcohol</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cocteles con alcohol
+                        </a>
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./Whiskey.html">Whisky</a></li>
+                            <li><a class="dropdown-item" href="./Vodka.html">Vodka</a></li>
+                            <li><a class="dropdown-item" href="./Gin.html">Gin</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
         </div>
     </nav>
+
+    <div class="row justify-content-center">
+        <div class="col-auto tituloDrinks mb-2" id="coctel1">
+            Elige tu cocktail
+        </div>
+    </div>
+
+    <div class="grilla3">
+        <a href="#whiskey1" class="imgGrilla3 item1"></a>
+        <a href="#whiskey2" class="imgGrilla3 item2"></a>
+        <a href="#whiskey3" class="imgGrilla3 item3"></a>
+        <a href="#whiskey4" class="imgGrilla3 item4"></a>
+        <a href="#whiskey5" class="imgGrilla3 item5"></a>
+        <a href="#whiskey6" class="imgGrilla3 item6"></a>
+    </div>
+
+    <div class="row justify-content-center">
+
+        <div class="col-auto titulos mt-5 mb-3 rounded-4" id="whiskey1">
+            Cóctel old fashioned
+        </div>
+
+    </div>
+
+    <div class="container mb-5 bordeAmarillo">
+        <div class="row">
+            <div class="col-lg">
+                <img class="rounded mt-4" src="../Assets/oldFashioned.png" alt="oldFashioned">
+            </div>
+            <div class="col text-box2">
+                <h3 class="mb-2 text-md-center">Origen del Cóctel old fashioned</h3>
+                <p class="mb-5">Este fue creado a inicios del siglo xx por un general retirado que no fue demasiado
+                    amante del whisky y que, para modificar su fuerte sabor alcohólico, preparó una base de azúcar y
+                    angostura y añadió una generosa cantidad de hielo, logrando así una combinación que se ha convertido
+                    en un clásico. Este cóctel llegó a ser tan popular que generalizó el uso de Old Fashioned para
+                    designar un vaso bajo y grueso, perfecto para un trago corto con hielo en cubo.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col text-box2">
+                    <h3>Ingredientes</h3>
+                    <ul class="mb-5">
+                        <li>Azucar <strong>2 cucharadas</strong></li>
+                        <li>Angostura <strong>2 medidas</strong></li>
+                        <li>Soda <strong>1 medida</strong></li>
+                        <li>Bourbon <strong>2 oz(60mL)</strong></li>
+                        <li>Piel de naranja(decoración) <strong>1 rodaja</strong></li>
+                        <li>Hielo</li>
+                    </ul>
+                    <h3>Preparación</h3>
+                    <ol>
+                        <li>El cóctel lo realizamos directo en el vaso en el que servimos 2 cucharadas de azúcar.</li>
+                        <li>Añade dos chorritos de angostura y uno de soda.</li>
+                        <li>Impregna el vaso con la mezcla.</li>
+                        <li>Agrega el bourbon y 2 o 3 cubos de hielo (o según preferencia).</li>
+                        <li>Lo removemos con una cucharilla de bar controlando la solución.
+                            Para adornar el cóctel corta una cáscara de naranja alargada, retuércela un poco, ponla
+                            dentro del trago y remueve una vez más.</li>
+                    </ol>
+                </div>
+
+                <div class="col-md">
+                    <iframe class="h-100 pb-5 mt-4" width="1280" height="720"
+                        src="https://www.youtube.com/embed/vP-Ya1TuzZI"
+                        title="🥃 COCKTAIL OLD FASHIONED / HISTORIA / EL PRIMER COCKTAIL DEL MUNDO" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+
+        <div class="col-auto titulos mt-5 mb-3 rounded-4" id="whiskey2">
+            Café irlandés
+        </div>
+
+    </div>
+
+    <div class="container mb-5 bordeAmarillo">
+        <div class="row">
+            <div class="col-lg">
+                <img class="rounded mt-2" src="../Assets/img2.jpg" alt="cafeIrlandes">
+            </div>
+            <div class="col text-box2">
+                <h3 class="mb-2 text-md-center">Origen del Café irlandés</h3>
+                <p class="mb-5">El café irlandés lo inventó Joe Sheridan durante la década de los cuarenta del siglo XX,
+                    su popularidad se extendió alrededor del mundo. La combinación del café, el whisky y la nata coloca
+                    a esta preparación entre las bebidas con whisky más exquisitas que existen. ¿Qué esperas para
+                    probarla? ¡Sigue este paso a paso! Rinde para 4 comensales.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col text-box2">
+                    <h3>Ingredientes</h3>
+                    <ul class="mb-5">
+                        <li>Whisky (preferiblemente irlandés) <strong>1 vaso</strong></li>
+                        <li>Café <strong>1/2 litro</strong></li>
+                        <li>Nata líquida (crema de leche) <strong>200 gramos</strong></li>
+                        <li>Azúcar <strong>40 gramos</strong></li>
+                    </ul>
+                    <h3>Preparación</h3>
+                    <ol>
+                        <li>Calienta el whisky con azúcar y espera hasta que hierva.</li>
+                        <li>Distribuye la mezcla en 4 vasos.</li>
+                        <li>Vierte encima el café bien caliente. Tenlo listo con antelación.</li>
+                        <li>Monta la crema de leche. Una vez lista, puedes introducirla en una manga pastelera o usarla
+                            así.</li>
+                        <li>Cubre con la crema los vasos. Disfruta esta bebida sin remover, así la nata permanecerá en
+                            la superficie.</li>
+                    </ol>
+                </div>
+
+                <div class="col-md">
+                    <iframe class="h-100 pb-3 pt-4" width="1280" height="723"
+                        src="https://www.youtube.com/embed/jwwj0Cjm-yY"
+                        title="&quot;CAFÉ IRLANDÉS&quot; los mejores TIPS para convertirse en un gran BARTENDER HOGAREÑO @NicolasSaya"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+
+        <div class="col-auto titulos mt-5 mb-3 rounded-4" id="whiskey3">
+            John collins
+        </div>
+
+    </div>
+
+    <div class="container mb-5 bordeAmarillo">
+        <div class="row">
+            <div class="col-lg">
+                <img class="rounded mt-2" src="../Assets/jhonCollins.png" alt="jhonCollins">
+            </div>
+            <div class="col text-box2">
+                <h3 class="mb-2 text-md-center">Origen del John collins</h3>
+                <p class="mb-5">En un principio, este cóctel se preparaba y servía como una limonada con alcohol,
+                    específicamente con ginebra, preparada por Tom y John Collins, un bartender en New York. Sin
+                    embargo, con el paso del tiempo, esta receta cambió. Hoy en día es muy popular servirla con whisky o
+                    con vodka, ya que estos se acompañan muy bien con el refrescante sabor de la limonada.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col text-box2">
+                    <h3>Ingredientes</h3>
+                    <ul class="mb-5">
+                        <li>Whisky <strong>1 onza</strong></li>
+                        <li>Jugo de limón <strong>1 onza</strong></li>
+                        <li>Jarabe de azúcar <strong>1/2 onza</strong></li>
+                        <li>Soda o agua mineral</li>
+                        <li>Limón y cereza <strong>Rodaja</strong></li>
+                    </ul>
+                    <h3>Preparación</h3>
+                    <ol>
+                        <li>Añade el jarabe de azúcar y el limón en un vaso de Collins. Agita muy bien con la ayuda de
+                            una cuchara alargada.</li>
+                        <li>Agrega el hielo al vaso y después rellénalo con agua mineral o soda. Mezcla un poco con la
+                            cuchara.</li>
+                        <li>Decora con una rodaja de limón y sirve.</li>
+                    </ol>
+                </div>
+
+                <div class="col-md">
+                    <iframe class="h-100 pb-3 pt-4" width="838" height="471"
+                        src="https://www.youtube.com/embed/MdLxjDwrioc" title="Cóctel. John Collins" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+
+        <div class="col-auto titulos mt-5 mb-3 rounded-4" id="whiskey4">
+            Whisky sour
+        </div>
+
+    </div>
+
+    <div class="container mb-5 bordeAmarillo">
+        <div class="row">
+            <div class="col-lg">
+                <img class="rounded mt-2" src="../Assets/img4.jpg" alt="whiskySour">
+            </div>
+            <div class="col text-box2">
+                <h3 class="mb-2 text-md-center">Presentación</h3>
+                <p class="mb-5">Este cóctel es uno de los clásicos y definitivamente no podía faltar en esta lista de
+                    tragos con whisky. Se caracteriza por su sabor cítrico, el cual es disfrutado por grandes
+                    conocedores y amateurs por igual. Esta combinación del Whisky con el limón es una de las más
+                    conocidas y maravillosas que existen, ambos ingredientes se fusionan a la perfección en una bebida
+                    que debes probar al menos una vez.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col text-box2">
+                    <h3>Ingredientes</h3>
+                    <ul class="mb-5">
+                        <li>Whisky <strong>30 mL</strong></li>
+                        <li>Jugo de limón <strong>30 mL</strong></li>
+                        <li>Azúcar <strong>1 cucharada sopera</strong></li>
+                        <li>Hielo <strong>5 cubos</strong></li>
+                        <li>Limón <strong>Rodaja</strong></li>
+                    </ul>
+                    <h3>Preparación</h3>
+                    <ol>
+                        <li>Vierte el whisky en una coctelera junto con el zumo de limón y el azúcar respectivamente.
+                        </li>
+                        <li>Agita enérgicamente durante unos segundos hasta que se disuelva el azúcar y los líquidos se
+                            enfríen.</li>
+                        <li>Pasa el contenido de la coctelera a un vaso corto que contenga dos cubos de hielo, en caso
+                            de que haya agua en el vaso, retirala.</li>
+                        <li>Decora con una rodaja de limón.</li>
+                    </ol>
+                </div>
+
+                <div class="col-md">
+                    <iframe class="h-100 pb-3 pt-4" width="737" height="415"
+                        src="https://www.youtube.com/embed/DZTLvzJK4KU" title="¿Cómo preparar un WHISKY SOUR?"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+
+        <div class="col-auto titulos mt-5 mb-3 rounded-4" id="whiskey5">
+            Coctel manhattan
+        </div>
+
+    </div>
+
+    <div class="container mb-5 bordeAmarillo">
+        <div class="row">
+            <div class="col-lg">
+                <img class="rounded mt-4" src="../Assets/manhattan.png" alt="manhattan">
+            </div>
+            <div class="col text-box2">
+                <h3 class="mb-2 text-md-center">Sobre el coctel manhattan</h3>
+                <p class="mb-5">Este cóctel fue creado en 1870 por el Dr. Lain Marshall. La historia cuenta que Jennie
+                    Jerome (Lady Randolph) preparó un banquete para el candidato presidencial Samuel J, Tilden. Por lo
+                    cual, ordenó que se preparara una bebida especial para recibirlo. La sorpresa fue que todos quedaron
+                    encantados y la bebida rápidamente se popularizó como “el cóctel de Manhattan”.
+                    Usualmente se sirve como aperitivo, pero por su nivel de alcohol, es preferente que se guarde para
+                    lo último de una comida.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col text-box2">
+                    <h3>Ingredientes</h3>
+                    <ul class="mb-5">
+                        <li>Vermut dulce (tipo Martini Rojo) <strong>22 mL</strong></li>
+                        <li>Whisky bourbon <strong>90 mL</strong></li>
+                        <li>Angostura <strong>1 medida</strong></li>
+                        <li>Cereza marrasquino <strong>1</strong></li>
+                        <li>Cáscara de naranja <strong>1</strong></li>
+                        <li>Hielo</li>
+                    </ul>
+                    <h3>Preparación</h3>
+                    <ol>
+                        <li>Pon el hielo picado en una coctelera.</li>
+                        <li>Añade la Angostura, el Whisky y el Vermouth.</li>
+                        <li>Agita con una varilla estos ingredientes.</li>
+                        <li>Pon las cerezas para darle ese color especial.</li>
+                        <li>Decora con cerezas y una cáscara de naranja.</li>
+                    </ol>
+                </div>
+
+                <div class="col-md">
+                    <iframe class="h-100 pb-3 pt-4" width="737" height="415"
+                        src="https://www.youtube.com/embed/RPQ0HgioxPQ"
+                        title="COCKTAIL MANHATTAN CLASICO | COCTELES POPULARES | MENTOR JOGLAN" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+
+        <div class="col-auto titulos mt-5 mb-3 rounded-4" id="whiskey6">
+            Mint julep
+        </div>
+
+    </div>
+
+    <div class="container mb-5 bordeAmarillo">
+        <div class="row">
+            <div class="col-lg">
+                <img class="rounded mt-4" src="../Assets/img6.jpg" alt="mintJulep">
+            </div>
+            <div class="col text-box2">
+                <h3 class="mb-2 text-md-center">Sobre el Mint julep</h3>
+                <p class="mb-5">Este es un trago dulce y refrescante que tiene su origen en el sur de los Estados
+                    Unidos, durante el siglo XVIII. El primer registro escrito de esta maravillosa bebida se encuentra
+                    en un libro del famoso John Davis, publicado en Londres en 1803.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col text-box2">
+                    <h3>Ingredientes</h3>
+                    <ul class="mb-5">
+                        <li>Jarabe <strong>1&3 onza</strong></li>
+                        <li>Hojas de menta fresca</li>
+                        <li>Whisky <strong>2 onzas</strong></li>
+                        <li>Hielo raspado</li>
+                        <li>Ramita de menta <strong>1</strong></li>
+                    </ul>
+                    <h3>Preparación</h3>
+                    <ol>
+                        <li>Tritura con un mortero las hojas de menta. Hazlo suavemente y solo un poco, si no amargará
+                            el trago.</li>
+                        <li>Vierte el jarabe. Aplasta de nuevo las hojas y mézclalas con el jarabe.</li>
+                        <li>Añade el whisky y llena el vaso con hielo raspado hasta que forme una pequeña montaña.</li>
+                        <li>Decora con una ramita de menta.</li>
+                    </ol>
+                </div>
+                
+                <div class="col-md">
+                    <iframe class="h-100 pb-3 pt-4" width="737" height="415" src="https://www.youtube.com/embed/aJ9CQ_R1GsY"
+                        title="Mint Julep Cocktail Recipe" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <footer>
         <a href="./Contacto.html" class="contactoFooter">Contacto</a>

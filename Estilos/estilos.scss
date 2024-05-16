@@ -1,9 +1,32 @@
-* {
-    font-family: 'Poppins', sans-serif;
+/* * {
+    
+} */
+
+/* Variables */
+
+$amarillo: #FFD15C;
+$negro: #000;
+$gris: #333;
+$animal: perro;
+
+/* Variables */
+
+/* mixins */
+
+@mixin saturate{
+    filter: saturate(150%);
 }
+
+/* mixins */
+
+@import 'whiskey';
+@import 'home';
+@import 'vodka';
+
 
 body {
     background-color: rgb(12, 12, 12);
+    font-family: 'Poppins', sans-serif;
 }
 
 .drinkles {
@@ -18,20 +41,22 @@ body {
 
 /* NAVBAR */
 .nav-link {
-    color: #FFD15C;
+    color: $amarillo;
 }
 
 .dropdown-item {
-    color: #FFD15C;
+    color: $amarillo;
 }
 
 .dropdown-item:hover {
-    color: #FFD15C;
-    background-color: black;
-} 
+    color: $amarillo;
+    background-color: $negro;
+}
+    
 /* NAVBAR */
 
-img,iframe {
+img,
+iframe {
     float: inline-start;
     margin-right: 2rem;
     margin-bottom: 10px;
@@ -48,7 +73,7 @@ h1 {
 }
 
 footer {
-    background-color: #333;
+    background-color: $gris;
     color: #fff;
     text-align: center;
     padding: 5px;
@@ -59,13 +84,13 @@ footer {
 }
 
 .contacto {
-    background-image: url(./Assets/coctel\ background.jpg);
+    background-image: url(../Assets/coctelBackground.jpg);
     background-size: cover;
 }
 
 .contactoFooter {
     text-decoration: none;
-    color: #FFD15C;
+    color: $amarillo;
     font-size: 25px;
 }
 
@@ -80,9 +105,15 @@ ul {
 }
 
 .titulos {
-    background-color: #FFD15C;
+    background-color: $amarillo;
     font-size: 40px;
 }
+
+@media (max-width: 500px) {
+    .titulos {
+        font-size: 9vw;
+    }
+  }
 
 .destilacion {
     height: 650px;
@@ -90,7 +121,7 @@ ul {
 }
 
 @media only screen and (max-width: 780px) {
-    .destilacion{
+    .destilacion {
         height: auto;
     }
 }
@@ -99,7 +130,7 @@ ul {
 .grilla {
     display: grid;
     grid-template-rows: 10% 90%;
-    grid-template-columns: 50% 50% ;
+    grid-template-columns: 50% 50%;
     grid-template-areas:
         "clas clas"
         "clas_img clas_list";
@@ -140,7 +171,7 @@ ul {
         overflow: auto;
         padding-bottom: 20px;
     }
-    
+
     .clas_coctel_img {
         padding-top: 10px;
         overflow: auto;
@@ -162,7 +193,7 @@ ul {
         overflow: auto;
         padding-bottom: 20px;
     }
-    
+
     .clas_coctel_img {
         padding-top: 10px;
         overflow: auto;
@@ -191,41 +222,41 @@ ul {
 
 .img1 {
     grid-area: img1;
-    background-image: url(./Assets/shirley\ temple.jpg);
+    background-image: url(../Assets/shirleyTemple.jpg);
 }
 
 .img2 {
     grid-area: img2;
-    background-image: url(./Assets/Michelada\ sin\ alcohol.jpg);
+    background-image: url(../Assets/MicheladaSinAlcohol.jpg);
 }
 
 .img3 {
     grid-area: img3;
-    background-image: url(./Assets/Limonada\ de\ piña.jpg);
+    background-image: url(../Assets/LimonadaDePiña.jpg);
 }
 
 .img4 {
     grid-area: img4;
-    background-image: url(./Assets/Limonada\ a\ la\ americana.jpg);
+    background-image: url(../Assets/LimonadaALaAmericana.jpg);
 }
 
 .img5 {
     grid-area: img5;
-    background-image: url(./Assets/Limonada\ de\ frambuesa.jpg);
+    background-image: url(../Assets/LimonadaDeFrambuesa.jpg);
 }
 
 .img6 {
     grid-area: img6;
-    background-image: url(./Assets/Smoothie\ de\ mango.jpg);
+    background-image: url(../Assets/SmoothieDeMango.jpg);
 }
 
 .img7 {
     grid-area: img7;
-    background-image: url(./Assets/Té\ verde.jpg);
+    background-image: url(../Assets/TéVerde.jpg);
     background-position: bottom;
 }
 
-.imgGrilla {
+.imgGrilla2 {
     border: 5px solid white;
     background-size: cover;
     background-position: center;
@@ -233,7 +264,7 @@ ul {
     transition: all 0.4s;
 }
 
-.imgGrilla:hover {
+.imgGrilla2:hover {
     transform: scale(1.05);
     filter: contrast(105%);
 }
@@ -242,14 +273,14 @@ ul {
     .grilla2 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
-        
+
         grid-template-areas:
-        "img1 img2"
-        "img1 img3"
-        "img4 img5"
-        "img6 img7";
+            "img1 img2"
+            "img1 img3"
+            "img4 img5"
+            "img6 img7";
     }
-    
+
 }
 
 /* GRILLA 2*/
@@ -273,3 +304,5 @@ ul {
 }
 
 /* COCTELES SIN ALCOHOL */
+
+
