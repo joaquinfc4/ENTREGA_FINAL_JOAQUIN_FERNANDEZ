@@ -1,6 +1,0 @@
-Cambié el formato de las imagenes a jpg con photoshop y cambie su resolución
-Agregué etiquetas meta keywords 
-Agregué descripciones en los HTML, descripciones claras
-Le puse title a todas las paginas, titles concisos
-Diferencie h1, h2 y h3 para cada encabezado o texto segun su relevancia
-Usé la etiqueta strong para dar relevancia
