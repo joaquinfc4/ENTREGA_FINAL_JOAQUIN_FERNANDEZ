@@ -2,196 +2,184 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pagina principal">
-    <meta name="keywords" content="SOBRE NOSOTROS, COCTELES, COCTELERIA, RECETAS, TRAGOS">
-  <title>Drinkles</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="./Estilos/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
-<body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand ms-4" href="#">
-        <img class="logo rounded drinkles" src="./Assets/drinkles.png" alt="drinkels_logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Pages/Aprender.html">Aprender</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Pages/CoctelesSinAlcohol.html">Cocteles sin alcohol</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Cocteles con alcohol
+<body class="body">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-4" href="../index.html">
+                <img class="logo rounded drinkles" src="../Assets/drinkles.png" alt="drinkels_logo">
             </a>
-            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="./Pages/Whiskey.html">Whisky</a></li>
-              <li><a class="dropdown-item" href="./Pages/Vodka.html">Vodka</a></li>
-              <li><a class="dropdown-item" href="./Pages/Gin.html">Gin</a></li>
-            </ul>
-          </li>
-        </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./carrito.html">Carrito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#coctelesSinAlcohol">Cocteles sin alcohol</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cocteles con alcohol
+                        </a>
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#whiskey">Whisky</a></li>
+                            <li><a class="dropdown-item" href="#vodka">Vodka</a></li>
+                        </ul>
+                    </li>
+                </ul>
 
-      </div>
+            </div>
+        </div>
+    </nav>
+
+    <h5 class="bienvenido textoBienvenida">¡Bienvenidos a Drinkles!</h5>
+
+    <div class="textoBienvenida bg-dark container mb-5">
+        <div class="row">
+            <div class="col">
+                <img src="./Assets/cocteles.jpg" alt="cocteles" class="mt-3 mb-3">
+
+            </div>
+            <div class="col">
+                <p class="text">Nos alegra tenerte aquí. En Drinkles, nos apasiona ofrecerte los mejores cócteles para
+                    cada
+                    ocasión. Explora nuestra selección y descubre sabores únicos que harán de tus momentos
+                    especiales algo inolvidable. </p>
+                <p class="text"><strong>¡Disfruta de tu compra y salud!</strong></p>
+            </div>
+        </div>
+
+
     </div>
-  </nav>
+    <div class="background mt-5">
+        <div class="row">
+            <div id="coctelesSinAlcohol" class="col-md-auto titulos mt-5 rounded-4">
+                COCTELES SIN ALCOHOL
+            </div>
+        </div>
 
-  <div class="row justify-content-center">
-    <div class="col-auto tituloHome">
-      Sobre nosotros
-    </div>
-  </div>
-
-  <div class="d-flex">
-    <div class="text-box">
-      
-      <img src="./Assets/cocteles.jpg" alt="bartender">
-      <p>Bienvenido a <strong>Drinkles</strong>, tu fuente de recetas de cócteles. Estamos dedicados a proporcionarte la
-        mejor información sobre
-        coctelería, con un enfoque en la calidad, la autenticidad y la diversidad.</p>
-      <p>Cuando comenzamos, nuestra pasión por
-        los cócteles nos impulsó a investigar sobre el tema y a convertir esa pasión en una próspera página web. Ahora
-        servimos a clientes en todo el mundo y estamos encantados de poder compartir nuestra pasión contigo.</p>
-      <p>Nos esforzamos por educar a nuestros visitantes sobre la rica historia de la coctelería, desde sus humildes
-        comienzos hasta las sofisticadas mezclas que conocemos y amamos hoy en día. Además, ofrecemos una amplia
-        variedad de recetas de cócteles para todos los gustos y ocasiones, así como una detallada clasificación de
-        cócteles para ayudarte a entender mejor este fascinante mundo.</p>
-      <p>Esperamos que disfrutes de nuestra página web
-        tanto como nosotros disfrutamos creándola para ti. Si tienes alguna pregunta o comentario, no dudes en
-        <a href="./Pages/Contacto.html">contactarnos.</a>
-      </p>
-      <p class="ms-2">
-        ¡Salud!
-      </p>
-      <p>
-        - El equipo de Drinkles
-      </p>
+        <div id="container1" class="container  pb-5"></div>
 
     </div>
-  </div>
 
-  <div class="row justify-content-center">
-    <div class="col-auto tituloHome mb-2">
-      Cocteles mas famosos
+
+    <div class="background mt-5">
+        <div class="row">
+            <div id="whiskey" class="col-md-auto titulos rounded-4 margin">
+                COCTELES CON ALCOHOL - Whiskey
+            </div>
+        </div>
+
+        <div id="container2" class="container"></div>
+
     </div>
-  </div>
+    <div class="background mt-5">
+        <div class="row">
+            <div id="vodka" class="col-md-auto titulos rounded-4 margin2">
+                COCTELES CON ALCOHOL - Vodka
+            </div>
+        </div>
 
-  <div id="carouselExampleCaptions" class="carousel slide mb-5" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <div id="container3" class="container"></div>
+
     </div>
-    <div class="carousel-inner  carruselSize">
-      <div class="carousel-item active" data-bs-interval="7000">
-        <img src="./Assets/martini.jpg" class="w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <div class="row justify-content-center">
-            <div class="col-auto tituloCarrusel mb-4">
-              MARTINI
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="5000">
-        <img src="./Assets/daiquiri.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <div class="row justify-content-md-center">
-            <div class="col-md-auto tituloCarrusel mb-4">
-              DAIQUIRI
-            </div>
-          </div>
-          
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="5000">
-        <img src="./Assets/margarita.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <div class="row justify-content-md-center">
-            <div class="col-md-auto tituloCarrusel mb-4">
-              MARGARITA
-            </div>
-          </div>
-          
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="5000">
-        <img src="./Assets/oldFashioned.png" class="d-block w-100" alt="oldFashioned">
-        <div class="carousel-caption d-none d-md-block">
-          <div class="row justify-content-md-center">
-            <div class="col-md-auto tituloCarrusel mb-4">
-              OLD FASHIONED
-            </div>
-          </div>
-          
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="5000">
-        <img src="./Assets/manhattan.png" class="d-block w-100" alt="manhattan">
-        <div class="carousel-caption d-none d-md-block">
-          <div class="row justify-content-md-center">
-            <div class="col-md-auto tituloCarrusel mb-4">
-              MANHATTAN
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="50000">
-        <img src="./Assets/mojito.png" class="d-block w-100" alt="mojito">
-        <div class="carousel-caption d-none d-md-block">
-          <div class="row justify-content-md-center">
-            <div class="col-md-auto tituloCarrusel mb-4">
-              MOJITO
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="5000">
-        <img src="./Assets/jhonCollins.png" class="d-block w-100" alt="jhonCollins">
-        <div class="carousel-caption d-none d-md-block">
-          <div class="row justify-content-md-center">
-            <div class="col-md-auto tituloCarrusel mb-4">
-              JHON COLLINS
-            </div>
-          </div>
-        </div>
-      </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
-  <footer>
-    <a href="./Pages/Contacto.html" class="contactoFooter">Contacto</a>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <!-- <div class="container carta m-4">
+        <div class="row">
+            <div class="col-4">
+                <div class="card-body bg-dark">
+                    <img src="./Assets/TéVerde.jpg" class="card-img-top bordeAmarillo" alt="te_verde">
+                    <div class="bordeAmarillo">
+                        <h5 class="card-title tituloHome">Te verde</h5>
+                        <p class="card-text">El té moruno es un tipo de té típico de marruecos. Una delicia que se suele
+                            preparar
+                            con un té verde traído desde oriente. Este tipo de té es de los que tiene mejores beneficios
+                            para la
+                            salud, pero también es de los más deseados por su sabor.</p>
+                        <div class="text-center ms-5">
+                            <a href="#" class="btn btn-primary d-inline-block">Comprar</a>
+                            <h4 class="d-inline-block pt-1">$100</h4>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card-body bg-dark">
+                    <img src="./Assets/TéVerde.jpg" class="card-img-top" alt="te_verde">
+                    <h5 class="card-title tituloHome">Te verde</h5>
+                    <p class="card-text">El té moruno es un tipo de té típico de marruecos. Una delicia que se suele
+                        preparar
+                        con un té verde traído desde oriente. Este tipo de té es de los que tiene mejores beneficios
+                        para la
+                        salud, pero también es de los más deseados por su sabor.</p>
+                    <div class="text-center ms-5">
+                        <a href="#" class="btn btn-primary d-inline-block">Comprar</a>
+                        <h4 class="d-inline-block pt-1">$100</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card-body bg-dark">
+                    <img src="./Assets/TéVerde.jpg" class="card-img-top" alt="te_verde">
+                    <h5 class="card-title tituloHome">Te verde</h5>
+                    <p class="card-text">El té moruno es un tipo de té típico de marruecos. Una delicia que se suele
+                        preparar
+                        con un té verde traído desde oriente. Este tipo de té es de los que tiene mejores beneficios
+                        para la
+                        salud, pero también es de los más deseados por su sabor.</p>
+                    <div class="text-center ms-5">
+                        <a href="#" class="btn btn-primary d-inline-block">Comprar</a>
+                        <h4 class="d-inline-block pt-1">$100</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div> -->
+
+    <!-- <div class="row">
+            <div class="col">
+                <div class="card-body bg-dark">
+                    <img src="./Assets/TéVerde.jpg" class="card-img-top" alt="te_verde">
+                    <h5 class="card-title tituloHome">Te verde</h5>
+                    <p class="card-text">El té moruno es un tipo de té típico de marruecos. Una delicia que se suele
+                        preparar
+                        con un té verde traído desde oriente. Este tipo de té es de los que tiene mejores beneficios
+                        para la
+                        salud, pero también es de los más deseados por su sabor.</p>
+                    <div class="text-center ms-5">
+                        <a href="#" class="btn btn-primary d-inline-block">Comprar</a>
+                        <h4 class="d-inline-block pt-1">$100</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div> -->
+
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="arrays.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

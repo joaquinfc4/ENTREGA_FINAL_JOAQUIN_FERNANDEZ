@@ -1,0 +1,273 @@
+body {
+  background-color: rgb(12, 12, 12);
+  font-family: "Poppins", sans-serif;
+}
+
+.background {
+  background-image: url(../Assets/6268.jpg);
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/* .bordeAmarillo {
+  border: 2px solid #FFD15C;
+  width: 18%;
+} */
+
+.tituloHome {
+  display: inline-block;
+  font-size: 40px;
+  background-color: #FFD15C;
+  border-radius: 45%;
+  /* margin-top: 5px; */
+  color: #000;
+  text-align: center;
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+
+.container {
+  display: flex;
+  margin-left: 0;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  width: auto;
+  border: 2px solid #FFD15C;
+  border-radius: 9px;
+  margin-top: 10px;
+}
+
+.img {
+  height: 25rem;
+  width: 18rem;
+  margin-bottom: 10px;
+  /* border: 2px solid #FFD15C;
+  border-radius: 9px; */
+}
+
+.bienvenido {
+  font-size: 40px;
+}
+
+.textoBienvenida {
+  color: #FFD15C;
+  text-align: center;
+  border: 2px solid #FFD15C;
+  border-radius: 9px;
+  margin-left: 250px;
+  margin-right: 293px;
+  margin-top: 15px;
+}
+
+
+.text {
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.titulos {
+  background-color: #FFD15C;
+  font-size: 70px;
+  color: #000;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.margin {
+  margin-top: 100px;
+}
+
+.margin2 {
+  margin-top: 148px;
+}
+
+.card-text {
+  color: #FFD15C;
+}
+
+.btn-custom {
+  background-color: #FFD15C; 
+  border-color: #000; 
+  color: #000; 
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active {
+  background-color: #FFC107;
+  border-color: #FFC107; 
+  color: #000; 
+  transform: scale(1.03);
+}
+
+.drinkles {
+  height: auto !important;
+  width: 5rem !important;
+  transition: 0.7s;
+}
+
+.drinkles:hover {
+  transform: scale(1.09);
+}
+
+/* NAVBAR */
+.nav-link {
+  color: #FFD15C;
+  font-size: 25px;
+}
+.nav-item {
+  margin-right: 40px;
+}
+
+.dropdown-item {
+  color: #FFD15C;
+}
+
+.dropdown-item:hover {
+  color: #FFD15C;
+  background-color: #000;
+}
+
+/* NAVBAR */
+
+
+h4 {
+  color: green;
+  position: relative;
+  top: 4px;
+}
+
+p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.card-body {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* carrito */
+.tituloDrinks {
+  font-size: 40px;
+  background-color: #FFD15C;
+  border-radius: 30% 0%;
+  margin-top: 9px;
+}
+
+#carrito {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.carrito-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #FFD15C;
+  padding: 10px 0;
+}
+
+.carrito-item img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.carrito-item-info {
+  flex-grow: 1;
+}
+
+.carrito-item-info h5 {
+  font-size: 30px;
+  color: #FFD15C;
+  position: relative;
+  top: 55px;
+}
+
+.carrito-item-info p {
+  font-size: 25px;
+  color: #FFD15C;
+}
+
+.carrito-item-subtotal {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFD15C;
+  margin-right: 25px;
+}
+
+#totalContainer {
+  text-align: right;
+  margin-right: 150px;
+  margin-top: 20px;
+}
+
+#subtotalText {
+  font-size: 25px;
+  color: #FFD15C;
+}
+
+.eliminar-btn {
+  background-color: #FF6347;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.eliminar-btn:hover {
+  background-color: #FF4500; 
+}
+
+.comprar-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.comprar-btn:hover {
+  background-color: #218838;
+}
+
+#totalContainer {
+  text-align: right;
+  margin-right: 150px;
+  margin-top: 20px;
+}
+
+#subtotalYBoton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#subtotalText {
+  font-size: 25px;
+  color: #FFD15C;
+  margin-right: 20px;
+}
+/* carrito */
+
+.carritoFooter {
+  text-decoration: none;
+  color: #FFD15C;
+  font-size: 25px;
+}
