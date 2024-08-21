@@ -11,70 +11,97 @@ document.addEventListener('DOMContentLoaded', () => {
     function eliminarProducto(id) {
         carrito = carrito.filter(producto => producto.id !== id);
         localStorage.setItem('carrito', JSON.stringify(carrito));
-        location.reload();
+
+        Toastify({
+            text: "Producto eliminado del carrito",
+            duration: 3000,
+            close: true,
+            gravity: "top", 
+            position: "right", 
+            backgroundColor: "#FF6347", 
+            stopOnFocus: true, 
+            style: {
+                borderRadius: "10px"
+            }
+        }).showToast();
+
+        actualizarCarrito();
     }
 
     function comprar() {
         if (carrito.length > 0) {
-            alert('Compra realizada con éxito');
-            carrito = [];
-            localStorage.setItem('carrito', JSON.stringify(carrito));
-            location.reload();
+            Swal.fire({
+                title: "Compra realizada con éxito!",
+                icon: "success"
+            }).then(() => {
+                carrito = [];
+                localStorage.setItem('carrito', JSON.stringify(carrito));
+                actualizarCarrito();
+            });
         } else {
-            alert('El carrito está vacío');
+            Swal.fire({
+                title: "El carrito está vacío",
+                icon: "info"
+            });
         }
     }
 
-    carrito.forEach(producto => {
-        const item = document.createElement('div');
-        item.className = 'carrito-item';
+    function actualizarCarrito() {
+        carritoContenedor.innerHTML = '';
+        subtotal = 0;
 
-        const imagen = document.createElement('img');
-        imagen.src = producto.image;
-        imagen.alt = producto.title;
+        carrito.forEach(producto => {
+            const item = document.createElement('div');
+            item.className = 'carrito-item';
 
-        const info = document.createElement('div');
-        info.className = 'carrito-item-info';
+            const imagen = document.createElement('img');
+            imagen.src = producto.image;
+            imagen.alt = producto.title;
 
-        const titulo = document.createElement('h5');
-        titulo.innerText = producto.title;
+            const info = document.createElement('div');
+            info.className = 'carrito-item-info';
 
-        const precioInicial = document.createElement('p');
-        precioInicial.innerText = `Precio: $${producto.precio}`;
+            const titulo = document.createElement('h5');
+            titulo.innerText = producto.title;
 
-        const cantidad = document.createElement('p');
-        cantidad.innerText = `Cantidad: ${producto.cantidad}`;
+            const precioInicial = document.createElement('p');
+            precioInicial.innerText = `Precio: $${producto.precio}`;
 
-        const subtotalProducto = producto.precio * producto.cantidad;
-        subtotal += subtotalProducto;
+            const cantidad = document.createElement('p');
+            cantidad.innerText = `Cantidad: ${producto.cantidad}`;
 
-        const subtotalElemento = document.createElement('div');
-        subtotalElemento.className = 'carrito-item-subtotal';
-        subtotalElemento.innerText = `$${subtotalProducto}`;
+            const subtotalProducto = producto.precio * producto.cantidad;
+            subtotal += subtotalProducto;
 
-        const botonEliminar = document.createElement('button');
-        botonEliminar.className = 'eliminar-btn';
-        botonEliminar.innerText = 'Eliminar';
-        botonEliminar.addEventListener('click', () => eliminarProducto(producto.id));
+            const subtotalElemento = document.createElement('div');
+            subtotalElemento.className = 'carrito-item-subtotal';
+            subtotalElemento.innerText = `$${subtotalProducto}`;
 
-        info.appendChild(titulo);
-        info.appendChild(precioInicial);
-        info.appendChild(cantidad);
+            const botonEliminar = document.createElement('button');
+            botonEliminar.className = 'eliminar-btn';
+            botonEliminar.innerText = 'Eliminar';
+            botonEliminar.addEventListener('click', () => eliminarProducto(producto.id));
 
-        item.appendChild(imagen);
-        item.appendChild(info);
-        item.appendChild(subtotalElemento);
-        item.appendChild(botonEliminar);
+            info.appendChild(titulo);
+            info.appendChild(precioInicial);
+            info.appendChild(cantidad);
 
-        carritoContenedor.appendChild(item);
-    });
+            item.appendChild(imagen);
+            item.appendChild(info);
+            item.appendChild(subtotalElemento);
+            item.appendChild(botonEliminar);
 
-    actualizarSubtotal();
+            carritoContenedor.appendChild(item);
+        });
+
+        actualizarSubtotal();
+    }
+
+    actualizarCarrito();
 
     const comprarBtn = document.getElementById('comprarBtn');
     comprarBtn.addEventListener('click', comprar);
 });
-
 
 
 

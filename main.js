@@ -16,11 +16,48 @@ function agregarAlCarrito(trago) {
             ...trago,
             cantidad: 1,
         }
-        carrito.push(nuevotrago)
-
+        carrito.push(nuevotrago);
     }
     localStorage.setItem("carrito", JSON.stringify(carrito));
+
+    const randomPokemonId = Math.floor(Math.random() * 151) + 1;
+
+    fetch(`https://pokeapi.co/api/v2/pokemon/${randomPokemonId}`)
+        .then(response => response.json())
+        .then(data => {
+            const pokemonName = data.name;
+            const pokemonImage = data.sprites.other['official-artwork'].front_default;
+
+            Toastify({
+                text: `Agregado al carrito. ¡Te tocó ${pokemonName}!`,
+                duration: 3000,
+                close: true,
+                gravity: "top",
+                position: "right",
+                backgroundColor: "#4CAF50",
+                stopOnFocus: true,
+                style: {
+                    borderRadius: "10px"
+                }
+            }).showToast();
+
+            Swal.fire({
+                title: `¡Te tocó ${pokemonName}!`,
+                text: "¡Disfruta de tu compra!",
+                imageUrl: pokemonImage,
+                imageWidth: 100,
+                imageHeight: 100,
+                imageAlt: pokemonName,
+                confirmButtonText: "¡Genial!"
+            });
+        })
+        .catch(error => {
+            console.error("Error al obtener el Pokémon:", error);
+        });
 }
+
+
+
 
 function crearCard(trago, numeroId) {
 
